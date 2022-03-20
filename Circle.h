@@ -1,6 +1,8 @@
 #pragma once
-#include <string >
-using namespace std;		
+#include <string>
+#include <cmath>
+using namespace std;
+static double Pi = 4 * atan(1);
 class Circle
 {
 private:
@@ -17,8 +19,8 @@ public:
 	void sety(double);
 	bool setR(double);
 
-	double getSquare()const { return 3.14 * R * R; } //площа
-	double getLength() const { return 2. * 3.14 * R; } // довжина
+	double getSquare()const { return Pi * Pi * R; } //площа
+	double getLength() const { return 2. * Pi * R; } // довжина
 
 	bool Init(double x, double y, double R);
 	void Read();
